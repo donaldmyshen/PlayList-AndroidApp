@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp">
+
+    <TextView
+            android:id="@+id/name"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+    <TextView
+            android:id="@+id/artist"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+    <Button
+            android:text="Delete"
+            android:layout_width="100dp"
+            android:layout_height="40dp" android:id="@+id/delete_music" android:layout_toEndOf="@+id/name"
+            android:layout_toRightOf="@+id/name" android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="41dp" android:layout_marginEnd="41dp"
+            android:layout_alignTop="@+id/play_music" android:layout_marginTop="0dp"/>
+    <Button
+            android:text="Play"
+            android:layout_width="100dp"
+            android:layout_height="40dp" android:id="@+id/play_music" android:layout_toStartOf="@+id/name"
+            android:layout_marginRight="78dp" android:layout_marginEnd="78dp" android:layout_toLeftOf="@+id/name"
+            android:layout_alignParentStart="true" android:layout_marginLeft="26dp" android:layout_marginStart="26dp"
+            android:layout_alignParentLeft="true" android:layout_alignTop="@+id/name" android:layout_marginTop="1dp"/>
+
+</RelativeLayout>

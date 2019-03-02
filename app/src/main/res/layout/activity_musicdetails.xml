@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/background"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/detail_music_img"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:contentDescription="music image"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                android:id="@+id/detail_music_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+        />
+
+        <TextView
+                android:id="@+id/detail_music_artist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+        />
+
+        <TextView
+                android:id="@+id/detail_music_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_artist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+        />
+
+        <TextView
+                android:id="@+id/detail_music_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_duration"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+        />
+
+        <TextView
+                android:id="@+id/detail_music_playcount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_url"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+        />
+
+        <Button
+                android:id="@+id/add_playlist"
+                android:text="ADD TO PLAYLIST"
+                android:textSize="20sp"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_playcount"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_line_while"
+                app:layout_constraintEnd_toStartOf="@+id/delete_playlist"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="8dp"/>
+        <Button
+                android:id="@+id/delete_playlist"
+                android:text="DELETE FROM PLAYLIST"
+                android:textSize="20sp"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/detail_music_playcount"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="28dp"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/border_line_while"
+                android:layout_marginRight="28dp"
+        />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
